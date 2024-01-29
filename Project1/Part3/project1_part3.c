@@ -32,10 +32,10 @@ int part3_init(void)
     struct birthday *person;
     
     person = kmalloc(sizeof(*person), GFP_KERNEL);
-    person->day = 29;
-    person->month = 3;
-    person->year = 2002;
-    person->name = "Guranggad";
+    person->day = 5;
+    person->month = 10;
+    person->year = 2004;
+    person->name = "Adams";
     INIT_LIST_HEAD(&person->list);
     
     list_add_tail(&person->list, &birthday_list);
